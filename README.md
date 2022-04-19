@@ -22,8 +22,15 @@ python-3 and above
 
 **To add Crone Job follow these steps**
 
-1. change user to root 
+1. Become a root user
 ```bash
- sudo su
+sudo su
 ```
-crontab -e 
+2. Run below command to open crontab config file 
+```bash
+crontab -e
+```
+3. Add Cron Job- when you want to run the job, location of the interpreter and location of the .py script
+```bash 
+0 0 * * * /usr/bin/python3 /home/joe/ssl_cert_script/ssl_cert.py
+```
