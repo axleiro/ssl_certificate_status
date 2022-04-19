@@ -22,8 +22,8 @@ python-3 and above
 
 **To add Crone Job follow these steps**
 
-change user to root 
+1. change user to root 
 ```bash
-   sudo su
+ sudo su
 ```
 crontab -e 
