@@ -14,7 +14,17 @@ python-3 and above
 
 1. Add all the domains in the **domains_url** list
 
-2. Change slack token on line 52 and 80
+2. Change slack token 
+
+ ```bash
+client = WebClient(token="YOUR_SLACK_TOKEN")
+
+try:
+    response = client.chat_postMessage(
+            channel="YOUR_SLACK_CHANNEL", 
+            )     
+
+ ```
 
 3. Change Slack channel as there are 2 channels in the script. so, in the first channel we need to add a channel where we want to get status of the SSL certificates daily and another channel where we want to get the notification if any of the give domain are about to expire in next 24 hours.
 
